@@ -1,17 +1,13 @@
-var devsworldapp = angular.module("devsworldapp", ["ngRoute"]);
-devsworldapp.config(function($routeProvider) {
+var dashboardapp = angular.module("dashboardapp", ["ngRoute"]);
+dashboardapp.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl : "includes/views/indexview.htm",
-        controller : "indexcontroller"
+    .when("/dashboard", {
+        templateUrl : "includes/views/dashboard.htm",
+        controller : "dashbcontroller"
     })
-    .when("/signin", {
-        templateUrl : "includes/views/signin.htm",
-        controller : "signincontroller"
+    .when("/projects", {
+        templateUrl : "includes/views/projects.htm",
+        controller : "projectscontroller"
     })
-    .when("/signup", {
-        templateUrl : "includes/views/signup.htm",
-        controller : "signupcontroller"
-    })
-    .otherwise({redirectTo : '/'});
+    .otherwise({redirectTo : '/dashboard'});
 });

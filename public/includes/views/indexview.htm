@@ -52,11 +52,11 @@
         <a class="item">Company</a>
         
         <div class="right item">
-          <div  id="lgnbtn" class="ui button " onclick="$('.loginmodal').modal('show');" >Sign In</div>
-          <div  id="sgnbtn" class="ui  button" onclick="$('.signupmodal').modal('show');">Sign Up</div>
-        <div  id="user-pic" class="ui avatar image"></div>
-        <div  id="user-name" class="text"></div>
-          <div  id="lgtbtn" class="ui  button " ng-click="signOut()" >Sign out</div>
+          <div  id="lgnbtn" class="ui button " onclick="$('.loginmodal').modal('show');" hidden >Sign In</div>
+          <div  id="sgnbtn" class="ui  button" onclick="$('.signupmodal').modal('show');" hidden >Sign Up</div>
+        <div  id="user-pic" class="ui avatar image" hidden ></div>
+        <div  id="user-name" class="text" hidden ></div>
+          <div  id="lgtbtn" class="ui  button " ng-click="signOut()" hidden >Sign out</div>
         </div>
       </div>
     </div>

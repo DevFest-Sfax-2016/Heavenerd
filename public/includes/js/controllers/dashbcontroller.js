@@ -1,15 +1,12 @@
 
 
-devsworldapp.controller("dashbcontrller", function($scope) {
+dashboardapp.controller("dashbcontroller", function($scope) {
 
     $scope.initFirebase = function() {
 
     // init UI components
-    this.signInButton = document.getElementById('lgnbtn');
-    this.signUpButton = document.getElementById('sgnbtn');
-    this.signOutButton = document.getElementById('lgtbtn');
-    this.userPic = document.getElementById('user-pic');
-  this.userName = document.getElementById('user-name');
+   
+
   // Shortcuts to Firebase SDK features.
   this.auth = firebase.auth();
   this.database = firebase.database();
@@ -88,6 +85,7 @@ $scope.signOut = function() {
   $scope.initFirebase();
   this.auth.signOut();
 };
+
 
 $scope.checkSetup = function() {
   if (!window.firebase || !(firebase.app instanceof Function) || !window.config) {
