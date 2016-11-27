@@ -1,13 +1,12 @@
- devsworldapp.directive("indexDirective", function() {
+devsworldapp.directive("signUpModalDiv", function() {
     return {
-        template : " {{ firstName + \" \" + lastName }}  <h1>Made by a directive!</h1>"
+        templateUrl : "includes/views/signup.htm"
     };
 });
 
+devsworldapp.controller("signupcontroller", function($scope) {
 
-devsworldapp.controller("indexcontroller", function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName= "Doe";
 
-   
+ 
+
 });

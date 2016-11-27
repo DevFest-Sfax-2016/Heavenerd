@@ -1,15 +1,7 @@
 
-
-  
-  
-
-
-  <i class="close icon"></i>
-  
   <div class="ui middle aligned center aligned grid content">
   <div class="column">
     <h2 class="ui teal image header">
-      <img src="" class="image">
       <div class="content">
         Log-in to your account
       </div>
@@ -19,22 +11,23 @@
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
+            <input type="text" name="email" placeholder="E-mail address" ng-model="useremail">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
             <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" ng-model="userpwd">
           </div>
         </div>
 
         <div class="actions">
-                <div class="ui fluid large teal submit button" ng-click="nsignIn()">Login</div>
+                <button class="ui fluid large teal submit button" ng-click="nsignIn()">Login</button>
+                <br />
                 <button  class="ui google button" ng-click="gsignIn()"><i class="google icon"></i>Connect with Google</button>
                 <button class="ui github button" ng-click="gitsignIn()"><i class="github icon"></i>Connect with Github</button>
                 <div class="ui message">
-                    New to us? <a href="#">Sign Up</a>
+                    New to us? <a href="#" onclick="$('.signupmodal').modal('show');">Sign Up</a>
                 </div>
         </div>
         

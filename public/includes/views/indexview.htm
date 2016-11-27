@@ -3,15 +3,14 @@
 
 
 
-<div class="ui small modal loginmodal" modal-div>
+<div class="ui small modal loginmodal" login-modal-div> </div>
+<div class="ui small modal signupmodal" sign-up-modal-div> </div>
 
 
-
-</div>
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">Home</a>
+    <a class="active item" href="/">Home</a>
     <a class="item">Work</a>
     <a class="item">Company</a>
     <a class="item">Careers</a>
@@ -27,7 +26,7 @@
 </div>
 
 <!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
+<div class="ui vertical  sidebar menu">
   <a class="active item">Home</a>
   <a class="item">Projects</a>
   <a class="item">Company</a>
@@ -39,26 +38,32 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui  vertical masthead center aligned segment" style="background:center top url('includes/images/indexbg1.png')">
 
     <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
+        
+      <div class="ui large secondary  pointing menu">
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active item">Home</a>
-        <a class="item">Projects</a>
+        <a class="active item" href="index.html">Home</a>
+        <a class="item" href="#">Projects</a>
+        <a class="item" href="dashboard.html">Dashboard</a>
         <a class="item">Company</a>
         
         <div class="right item">
-          <a class="ui inverted button" onclick="$('.loginmodal').modal('show');">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
+          <div  id="lgnbtn" class="ui button " onclick="$('.loginmodal').modal('show');" >Sign In</div>
+          <div  id="sgnbtn" class="ui  button" onclick="$('.signupmodal').modal('show');">Sign Up</div>
+        <div  id="user-pic" class="ui avatar image"></div>
+        <div  id="user-name" class="text"></div>
+          <div  id="lgtbtn" class="ui  button " ng-click="signOut()" >Sign out</div>
         </div>
       </div>
     </div>
 
     <div class="ui text container">
-      <h1 class="ui inverted header">
+        
+      <h1 class="ui  header">
         Imagine-a-World-For-Developpers-Only
       </h1>
       <h2>code whatever you want when you want to.</h2>
@@ -68,14 +73,14 @@
   </div>
 
   <div class="ui vertical stripe segment">
+      
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
+            
           <h3 class="ui header">We Help Developpers and Geeks</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-        </div>
+          <p>We can give your hackathon superpowers to do things that they never thought possible. Let us delight your coders and empower your needs....</p>
+         </div>
         <div class="six wide right floated column">
           <img src="" class="ui large bordered rounded image">
         </div>
@@ -121,27 +126,27 @@
   </div>
 
 
-  <div class="ui inverted vertical footer segment">
+  <div class="ui  vertical footer segment">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="ui stackable  divided equal height stackable grid">
         <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
+          <h4 class="ui  header">About</h4>
+          <div class="ui  link list">
             <a href="#" class="item">Sitemap</a>
             <a href="#" class="item">Contact Us</a>
             
           </div>
         </div>
         <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
+          <h4 class="ui  header">Services</h4>
+          <div class="ui  link list">
            
             <a href="#" class="item">FAQ</a>
             
           </div>
         </div>
         <div class="seven wide column">
-          <h4 class="ui inverted header">Made with Code and L<3VE </h4>
+          <h7 class="ui  header">Made with Code <i class="code icon"></i> and L<i class="heart icon"></i>VE </h7>
           <p>Heavenerd Inc.</p>
         </div>
       </div>

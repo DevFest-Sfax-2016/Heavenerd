@@ -1,0 +1,40 @@
+
+  <div class="ui middle aligned center aligned grid content">
+  <div class="column">
+    <h2 class="ui teal image header">
+     <div class="content">
+        Create a new account
+      </div>
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="E-mail address" ng-model="useremail">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password" ng-model="userpwd">
+          </div>
+        </div>
+
+        <div class="actions">
+                <button class="ui fluid large teal submit button" ng-click="nsignUp()">Register</button>
+                <br />
+                <button  class="ui google button" ng-click="gsignUp()"><i class="google icon"></i>Register With Google</button>
+                <button class="ui github button" ng-click="gitsignUp()"><i class="github icon"></i>Register with Github</button>
+                
+        </div>
+        
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+    
+  </div>
+</div>
