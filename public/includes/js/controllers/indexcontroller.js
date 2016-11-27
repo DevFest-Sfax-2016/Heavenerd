@@ -10,7 +10,7 @@ devsworldapp.directive("signUpModalDiv", function() {
     };
 });
 
-devsworldapp.controller("indexcontroller", function($scope) {
+devsworldapp.controller("indexcontroller", function ($scope, $window) {
 
 
    
@@ -146,10 +146,11 @@ $scope.onAuthStateChanged = function(user) {
 
     // Show user's profile 
      this.userName.removeAttribute('hidden');
-    this.userPic.removeAttribute('hidden');
+     this.userPic.removeAttribute('hidden');
+     this.userPic.removeClass('hidden');
 
 
-     //$state.go('/')
+    $window.location.href = 'index.html';
   }
    else
     { // User is signed out!
