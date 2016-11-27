@@ -49,25 +49,25 @@
         <a class="active item" href="index.html">Home</a>
         <a class="item" href="#">Projects</a>
         <a class="item" href="dashboard.html">Dashboard</a>
-        <a class="item">Company</a>
+        <a class="item" href="about.html">About</a>
         
         <div class="right item">
-          <div  id="lgnbtn" class="ui button " onclick="$('.loginmodal').modal('show');" hidden >Sign In</div>
-          <div  id="sgnbtn" class="ui  button" onclick="$('.signupmodal').modal('show');" hidden >Sign Up</div>
-        <div  id="user-pic" class="ui avatar image" hidden ></div>
-        <div  id="user-name" class="text" hidden ></div>
-          <div  id="lgtbtn" class="ui  button " ng-click="signOut()" hidden >Sign out</div>
+          <div  id="lgnbtn" class="ui button " ng-class="hidden" onclick="$('.loginmodal').modal('show');"  >Sign In</div>
+          <div  id="sgnbtn" class="ui button " ng-class="hidden" onclick="$('.signupmodal').modal('show');"  >Sign Up</div>
+        <div  id="user-pic" class="ui avatar image hidden" ng-class="hidden" ></div>
+        <div  id="user-name" class="text hidden" ng-class="hidden" ></div>
+          <div  id="lgtbtn" class="ui button hidden" ng-click="signOut()" ng-class="hidden" >Sign out</div>
         </div>
       </div>
     </div>
 
     <div class="ui text container">
-        
+        <br />
       <h1 class="ui  header">
         Imagine-a-World-For-Developpers-Only
       </h1>
       <h2>code whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <div class="ui huge primary button" onclick="$('.signupmodal').modal('show');">Get Started <i class="right arrow icon"></i></div>
     </div>
 
   </div>
@@ -82,7 +82,7 @@
           <p>We can give your hackathon superpowers to do things that they never thought possible. Let us delight your coders and empower your needs....</p>
          </div>
         <div class="six wide right floated column">
-          <img src="" class="ui large bordered rounded image">
+          <img src="includes/images/minibanner.jpg" class="ui large bordered rounded image">
         </div>
       </div>
       <div class="row">
@@ -98,13 +98,13 @@
     <div class="ui equal width stackable internally celled grid">
       <div class="center aligned row">
         <div class="column">
-          <h3>"What a Company"</h3>
+          <h3>"What a Company , What a Tool "</h3>
           <p>That is what they all say about us</p>
         </div>
         <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
+          <h3>"I'd never imagine a web app like that."</h3>
           <p>
-            <img src="" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+            <img src="includes/images/profil/A01034643.jpg" class="ui avatar image"> <b>Nan</b> Dev's World User
           </p>
         </div>
       </div>
@@ -114,13 +114,13 @@
   <div class="ui vertical stripe segment">
     <div class="ui text container">
       <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+      <p>Instead of focusing on content creation and hard work, we have learned how to give a place where coding becomes fun and interactive without code bug problems debugging war :p.</p>
       <a class="ui large button">Read More</a>
       <h4 class="ui horizontal header divider">
         <a href="#">Case Studies</a>
       </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+      <h3 class="ui header">Did We Tell You About Our Last Code Parties?</h3>
+      <p>We are the state of the art in developing competitions in all nerd's competition at all and you'll never regret using our tools.</p>
       <a class="ui large button">I'm Still Quite Interested</a>
     </div>
   </div>
@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="seven wide column">
-          <h7 class="ui  header">Made with Code <i class="code icon"></i> and L<i class="heart icon"></i>VE </h7>
+          <h7 class="ui  header">Made with C<i class="code icon"></i>de  and L<i class="heart icon"></i>VE </h7>
           <p>Heavenerd Inc.</p>
         </div>
       </div>

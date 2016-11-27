@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html ng-app="dashboardapp">
+  <head>
+    <meta charset="UTF-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Dev's World Web App">
+    <meta name="description" content="Dev's World Official Website">
+	 <!-- <link rel="icon" href="favicon.ico"> -->
+    <title>About</title>
+   
+   <link rel="stylesheet" type="text/css" href="includes/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="includes/css/animate.css" />
+      <link rel="stylesheet" type="text/css" href="includes/css/et-line.min.css" />
+   <link rel="stylesheet" type="text/css" href="includes/css/bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="includes/css/w3.css" /> 
+   <link rel="stylesheet" type="text/css" href="includes/js/dist/semantic.min.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" type="text/css" href="includes/css/font-awesome.min.css"  />
+
+
+   
+   <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+
+  			<!-- Frameworks JavaScript  -->
+			
+	
+
+		<!-- AngularJS -->
+
+		<script type="text/javascript" src="includes/js/angular.min.js"></script>
+		<script type="text/javascript" src="includes/js/angular-route.min.js"></script>
+
+		<!-- JqueryJS -->
+		<script type="text/javascript" src="includes/js/jquery.min.js"></script>
+
+		<!-- BootstrapJS -->
+		<script type="text/javascript" src="includes/js/bootstrap.min.js"></script>
+
+      <!-- FirebaseJS -->
+      <script src="includes/js/firebase.js"></script>
+      <script src="includes/js/firebase-app.js"></script>
+      <script src="includes/js/firebase-auth.js"></script>
+      <script src="includes/js/firebase-database.js"></script>
+      <script src="includes/js/firebase-messaging.js"></script>
+      <script src="includes/js/firebase-storage.js"></script>
+      <!-- AngularFireJS -->
+      <script src="includes/js/angularfire.min.js"></script>
+
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyANBV3ZdIo_H-4azm741ffkRhOKJSj3tLo",
+				authDomain: "devfest-6a58a.firebaseapp.com",
+				databaseURL: "https://devfest-6a58a.firebaseio.com",
+				storageBucket: "devfest-6a58a.appspot.com",
+				messagingSenderId: "445888539367"
+			};
+			firebase.initializeApp(config);
+		</script>
+
+			
+		
+		<!-- Custom Theme JavaScript -->
+		<script type="text/javascript" src="includes/js/magic.js"></script>
+      <script type="text/javascript" src="includes/js/typer.js"></script>
+      <script type="text/javascript" src="includes/js/blocs.js"></script>
+		<script type="text/javascript" src="includes/js/scrollbar.min.js"></script>
+		<script type="text/javascript" src="includes/js/scrollbar.jquery.min.js"></script>
+		<script type="text/javascript" src="includes/js/dist/semantic.min.js"></script>
+		<script type="text/javascript" src="includes/js/dist/components/visibility.js"></script>
+		<script type="text/javascript" src="includes/js/dist/components/sidebar.js"></script>
+		<script type="text/javascript" src="includes/js/dist/components/transition.js"></script>
+
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+	
+
+	
+
+
+  </head>
+  <body>
+    
+      <!-- Page Contents -->
+      <div class="pusher">
+          <div class="ui  vertical masthead center aligned segment" style="background:center top url('includes/images/indexbg1.png')">
+
+              <div class="ui container">
+
+                  <div class="ui large secondary  pointing menu">
+                      <a class="toc item">
+                          <i class="sidebar icon"></i>
+                      </a>
+                      <a class="item" href="index.html">Home</a>
+                      <a class="item" href="#">Projects</a>
+                      <a class="item" href="dashboard.html">Dashboard</a>
+                      <a class="active item" href="about.html">About</a>
+
+                      <div class="right item">
+                          <div id="lgnbtn" class="ui button " ng-class="hidden" onclick="$('.loginmodal').modal('show');">Sign In</div>
+                          <div id="sgnbtn" class="ui button " ng-class="hidden" onclick="$('.signupmodal').modal('show');">Sign Up</div>
+                          <div id="user-pic" class="ui avatar image hidden" ng-class="hidden"></div>
+                          <div id="user-name" class="text hidden" ng-class="hidden"></div>
+                          <div id="lgtbtn" class="ui button hidden" ng-click="signOut()" ng-class="hidden">Sign out</div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="ui  container">
+                  <!-- header -->
+                  <div class="bloc bgc-outer-space bg-city-overlay d-bloc" id="header">
+                      <div class="container bloc-xl">
+                          <div class="row">
+                              <br />
+                              <br />
+                              <div class="col-sm-12">
+                                  <h3 class="text-center mg-lg tc-white">
+                                      WE ARE SPECIALIST IN <span data-typer-targets="WEB DESIGN,WEB DEVELOPMENT,WEB COMMUNICATION,DEV TOOLS"></span>
+                                  </h3>
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <br />
+                                  <div class="row center text-center">
+
+                                    <div class="center text-center left">
+                                        <a class="ui huge button animDelay06 animated fadeInUp text-center" onclick="scrollToTarget('#porfolio')"> Provided Futures </a>
+                                    </div>
+
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- header END -->
+               </div>
+
+          </div>
+
+          <div class="ui vertical stripe segment">
+
+              <div class="ui middle aligned stackable grid container">
+                  <div class="row">
+                      <div class="eight wide column left">
+                          <h3 class="ui header">The Dev's World Project</h3>
+                          <p>The aim of this web app is to give hackathon organizers and coders empowering tools to make the event , the dev process , the final choice at all make everything easy</p>
+
+                      </div>
+                           <div class="six wide right floated column">
+                              <img src="includes/images/minibanner.jpg" class="ui large bordered rounded image">
+                          </div>
+
+                      
+                  </div>
+                      
+
+                      <div class="row">
+                      <!-- porfolio -->
+                      <div class="bloc l-bloc bgc-white" id="porfolio">
+                          <div class="container bloc-lg">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <h2 class="text-center mg-md ">
+                                          Our Portfolio
+                                      </h2>
+                                      <p class="text-center sub-heading">
+                                          Just a sample of what we do.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="row voffset">
+                                  <div class="col-sm-3">
+                                      <a href="#" data-lightbox="includes/images/features/registration.jpg" data-caption="Image description">
+                                          <img src="includes/images/features/registration.jpg" class="img-responsive animated zoomIn" alt="portfolio" />
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <a href="#" data-lightbox="includes/images/features/hebergement.jpg" data-caption="Image description">
+                                          <img src="includes/images/features/hebergement.jpg" class="img-responsive animated zoomIn" alt="portfolio" />
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <a href="#" data-lightbox="includes/images/features/evaluation.jpg" data-caption="Image description">
+                                          <img src="includes/images/features/evaluation.jpg" class="img-responsive animated zoomIn" alt="portfolio" />
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <a href="#" data-lightbox="includes/images/features/network.png" data-caption="Image description">
+                                          <img src="includes/images/features/network.png" class="img-responsive animated zoomIn" alt="portfolio" />
+                                      </a>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                      <!-- porfolio END -->
+
+                      
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <div class="row">
+
+                      <div class="center aligned column">
+                          <a class="ui huge button">The Team : Heavenerd</a>
+                          <h3 class="text-center mg-lg tc-white">
+                             Thank you for <span data-typer-targets="Your Attention,Your Patience"></span>
+                          </h3>
+                      </div>
+                      <div class="six wide right floated column">
+                          <img src="includes/images/bachir.jpg" class="ui large bordered rounded image">
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+
+      </div>
+
+
+  </body>
+</html>
