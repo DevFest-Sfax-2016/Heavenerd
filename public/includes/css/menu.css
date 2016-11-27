@@ -1,0 +1,217 @@
+/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+.qmmc .qmdivider {
+display:block;
+font-size:1px;
+border-width:0px;
+border-style:none;
+position:relative;
+z-index:9999 !important;
+}
+.qmmc .qmdividery {
+	float:left;
+	width:0px;
+}
+.qmmc .qmtitle {
+	display:block;
+	cursor:default;
+	white-space:nowrap;
+	position:relative;
+z-index:9999 !important;
+}
+.qmclear {
+	font-size:1px;
+	height:0px;
+	width:0px;
+	clear:right;
+	line-height:0px;
+	display:block;
+	float:none !important;
+}
+.qmmc {
+	position:relative;
+	zoom:1;
+z-index:9999 !important;
+}
+.qmmc a, .qmmc li {
+	float:left;
+	display:block;
+	white-space:nowrap;
+	position:relative;
+z-index:9999 !important;
+}
+.qmmc div a, .qmmc ul a, .qmmc ul li {
+	float:none;
+}
+.qmsh div a {
+	float:left;
+}
+.qmmc div {
+	visibility:hidden;
+	position:absolute;
+}
+.qmmc .qmcbox {
+	cursor:default;
+	display:block;
+	position:relative;
+z-index:9999 !important;
+}
+.qmmc .qmcbox a {
+	display:inline;
+}
+.qmmc .qmcbox div {
+	float:none;
+	position:static;
+	visibility:inherit;
+	left:auto;
+}
+.qmmc li {
+	z-index:auto;
+}
+.qmmc ul {
+	left:-9999px;
+	position:absolute;
+z-index:9999 !important;
+}
+.qmmc, .qmmc ul {
+	list-style:none;
+	padding-left:1px;
+	margin:0px;
+		z-index:9999 !important;
+}
+.qmmc li a {
+	float:none
+}
+.qmmc li:hover ul, .qmmc li.hover ul {
+	left:auto;
+}
+#qm0 ul {
+	top:100%;
+}
+#qm0 ul li:hover ul {
+	top:0px;
+	left:100%;
+}
+/*!!!!!!!!!!! QuickMenu Styles !!!!!!!!!!!*/
+
+
+	/* QuickMenu 0 */
+
+	/*"""""""" (MAIN) Items""""""""*/	
+#qm0 li {
+	position:relative;
+	float:left;
+	display:block;
+}
+#qm0 a {
+	font-size:13px;
+	color:#ffffff;
+	text-decoration:none;
+	height:36px;
+	padding:0px 10px 0px 10px;
+	line-height:36px;
+	font-weight:bold;
+	@float:left;
+}
+/*"""""""" (SUB) Container""""""""*/	
+#qm0 div, #qm0 ul {
+	padding:5px;
+	margin:0px;
+	clear:both;
+	background-color:#ffffff;
+	z-index:9999 !important;
+}
+/*"""""""" (SUB) Items""""""""*/	
+#qm0 div a, #qm0 ul a {
+	font-size:12px;
+	border-width:0px;
+	border-style:none;
+	list-style-image:none;
+	/*		margin:-10px 0px 0px 0px;*/
+	border-bottom:#ffffff dotted 1px;
+	z-index:9999 !important;
+}
+/*"""""""" (SUB) Hover State""""""""*/	
+#qm0 div a:hover {
+	background-color:#3F7EB3;
+	color:#CC0000;
+	z-index:9999 !important;
+}
+/*"""""""" (SUB) Hover State - (duplicated for pure CSS)""""""""*/	
+#qm0 ul a:hover {
+	background-color:transparent;
+	color:#fffff;
+	z-index:9999 !important;
+}
+/*"""""""" (SUB) Active State""""""""*/	
+body #qm0 div .qmactive, body #qm0 div .qmactive:hover {
+	background-color:#DADADA;
+	color:#CC0000;
+}
+/*"""""""" Individual Titles""""""""*/	
+#qm0 .qmtitle {
+	cursor:default;
+	padding:3px 0px 3px 4px;
+	color:#444444;
+	font-size:11px;
+	font-weight:bold;
+}
+/*"""""""" Individual Horizontal Dividers""""""""*/	
+#qm0 .qmdividerx {
+	margin:0px 0px 0px 0px;
+}
+/*"""""""" Individual Vertical Dividers""""""""*/	
+#qm0 .qmdividery {
+	@margin-bottom:20px !important;
+	width:2px;
+	height:36px;
+	background-image: url(../images/sep_menu_home.jpg);
+	float:left;
+}
+/*"""""""" Individual horizontal Dividers""""""""*/	
+#qm0 .qmdividery_horiz {
+	width:200px;
+	height:1px;
+	background-color:#b20c06;
+}
+/*"""""""" (main) Rounded Items""""""""*/	
+#qm0 .qmritem span {
+	background-color:#b20c06;
+}
+/*"""""""" (main) Rounded Items Content""""""""*/	
+#qm0 .qmritemcontent {
+	padding:0px 0px 0px 4px;
+}
+/*"""""""" Custom Rule""""""""*/	
+ul#qm0 ul {
+	background:#ececec;
+	font-weight:bold;
+	border-bottom:#ececec solid 4px;
+	z-index:999 !important;
+}
+/*"""""""" Custom Rule""""""""*/	
+ul#qm0 a:hover {
+	background-color:#ececec;
+	color:#b20c06;
+	height:36px;
+	@max-height:36px;
+	z-index:30 !important;
+
+}
+ul#qm0 ul li{
+	clear:both;
+	float:none;
+}
+ul#qm0 ul li a{
+	clear:both;
+	float:none;
+	display:block;
+	color:#000000;
+}
+ul#qm0 ul li a:hover {
+	background-color:#ececec;
+	color:#328aaf;
+	height:36px;
+	@max-height:36px;
+	z-index:30 !important;
+
+}
